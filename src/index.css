@@ -1,0 +1,180 @@
+/* Stili globali */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenitore principale */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* Titoli */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Campi di input */
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+  outline: none;
+}
+
+/* Pulsanti */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px 5px;
+}
+
+button.login-button {
+  background-color: #2575fc; /* Blu acceso */
+  color: white;
+}
+
+button.register-button {
+  background-color: #6a11cb; /* Viola acceso */
+  color: white;
+}
+
+button.logout-button {
+  background-color: #ff4d4d; /* Rosso acceso */
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Link di testo */
+a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #6a11cb;
+}
+
+/* Calendario */
+.react-calendar {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.react-calendar__tile {
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.react-calendar__tile:hover {
+  transform: scale(1.1);
+}
+
+.available-date {
+  background-color: green !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.booked-date {
+  background-color: red !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.holiday-date {
+  background-color: red !important; /* Giorni festivi in rosso */
+  color: white !important;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Stile per la data selezionata */
+.react-calendar__tile--active {
+  background-color: #2575fc !important; /* Blu acceso */
+  color: white !important;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Menu a tendina */
+option {
+  background: white;
+  color: black;
+  padding: 10px;
+}
+
+option[disabled] {
+  background-color: red;
+  color: white;
+}
+
+option:not([disabled]) {
+  background-color: green;
+  color: white;
+}
+
+/* Messaggi di successo/errore */
+p.success-message {
+  color: green;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+p.error-message {
+  color: red;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
